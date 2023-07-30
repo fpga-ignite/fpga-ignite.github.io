@@ -112,19 +112,6 @@ h3 {
     gap: 25px;
 }
 
-@media screen and (max-width: 768px) {
-  .lecturers-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Two columns for medium-sized screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .lecturers-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column for small screens (e.g., smartphones) */
-  }
-}
 
 .lecturer {
     background-color: rgba(255, 255, 255, 0.55);
@@ -178,6 +165,49 @@ h3 {
 }
 .lecturer h6, .lecturer h3{
     text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .lecturers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns for medium-sized screens */
+    gap: 25px;
+  }
+  .lecturer-image-wrapper{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 100px;
+ }
+
+ .lecturer-image{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 100px;
+    border: 1px solid black;
+ }
+}
+
+@media screen and (max-width: 480px) {
+  .lecturers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column for small screens (e.g., smartphones) */
+    gap: 25px;
+  }
+ .lecturer-image-wrapper{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 80px;
+ }
+
+ .lecturer-image{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 80px;
+    border: 1px solid black;
+ }
 }
 
 .day-grid{
