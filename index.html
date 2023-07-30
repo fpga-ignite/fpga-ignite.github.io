@@ -14,7 +14,8 @@
         <nav class="title-banner">
         <a href="#program-section" class="nav-link">Program</a>
         <a href="#presentations-section" class="nav-link">Presentations</a>
-        <a href="#online-section" class="nav-link">Online access</a>
+        <a href="#online-section" class="nav-link">Online-access</a>
+        <a href="#instructions-section" class="nav-link">Instructions</a>
         <a href="#registration-section" class="nav-link">Registration</a>
         <a href="#organizers-section" class="nav-link">Organizers</a>
         <a href="#venue-section" class="nav-link">Venue</a>
@@ -33,12 +34,52 @@
 	    </p>
     </section>
 
-    <!-- Acknowledgment -->
+    <!-- online -->
     <section id="online-section" class="wave-animation">
 	    <h2>Online access</h2> 
 	    <p> You can join the following zoom link for the onsite presentations:
                <b><a href="https://zoom.us/j/98788640815" target="_blank">Zoom-link</a></b>
 	    </p>
+    </section>
+
+    <!-- Instructions -->
+    <section id="instructions-section" class="wave-animation">
+	    <h2>Instructions</h2> 
+	    <p> The summer school labs have been embedded within virtual mahine images along with all the required software. Here, you can find the instructions on downloading and installing Virtual Machine software like VirtualBox and KVM/QEMU as well the corresponding VM-images.</p>
+
+	    <h5>Quick notes on the installation of Virtual Machines (Virtual Box and KVM/QEMU)</h5>
+	    <ol>
+		    <li><h4> Virtual Machine Software (Host)</h4>
+
+            The virtual machine (VM) image is available in VDI-format for VirtualBox and QCOW2-Format for KVM/QEMU.
+            
+            If you have already VirtualBox or KVM/QEMU installed, continue to (2).
+            
+            Decide which virtual machine software to install. If unsure, use VirtualBox (easier installation).
+            
+            Download VirtualBox for your system here:
+	    <a href="https://www.virtualbox.org/wiki/Downloads">Download links for VirtualBox</a> (Install and follow the instructions in the link provided).</li>
+
+		    <li><h4>Extract Virtual Machine</h4>
+            
+            The VM-image is available in two formats. You need only the one that fits to the virtual machine software that you installed.
+            
+	    The image itself is compressed using 7zip to save space; it needs to be extracted before starting. If you haven't 7zip installed, install it using the appropriate binary provided in the package (linux, macos, windows, 32- and 64-bit). You can download 7-zip from here: <a href="https://www.7-zip.org/download.html">Download links for 7-zip</a>
+            
+	    Then extract the image using 7zip. The extracted image needs at least 64GB free disk space.</li>
+            
+            
+		    <li><h4> Start Virtual Machine</h4>
+            
+			    Using the virtual machine software you chose, create a new virtual machine wich has at least Two CPUs and 20GB of RAM (more is better), and open the corresponding image. Then, start the virtual machine and you should see the Debian-system booting to the graphical login screen.  Done!</li>
+            </ol>
+            
+
+	    <h5>Link for the Virtual Machine Images:</h5>
+	      <ul>
+		      <li>Compressed VM-image for qemu/kvm:</h6> <a href="https://www.dropbox.com/scl/fi/5njqvcxf3uas5mjszdyur/FPGAIgnite2023a.qcow2.7z?rlkey=0ezf7e56izvxmq8cyckwthpwq&dl=0" target="_blank">KVM/QEMU VDI Image</a></li>
+	      <li>Compressed VM-image for Virtual Box/VMware:</h6> <a href="https://www.dropbox.com/scl/fi/14cme14fofccoyutwjfwj/FPGAIgnite2023a.vdi.7z?rlkey=79xcfcv0dklort4mpx4ub0oln&dl=0" target="_blank">VirtualBox/VMware VDI Image</a></li>
+	      </ul>
     </section>
     <!-- Program -->
     <section id="program-section" class="wave-animation">
