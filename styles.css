@@ -307,7 +307,7 @@ h6 {
         border: 1px solid black;
 }
 
-.sponsor-image-container{
+.sponsor-image-container1{
  position: relative;
   /* Set the desired width and height of the image container */
   width: 300px;
@@ -321,7 +321,14 @@ h6 {
   height: auto;
   overflow: hidden; /* To clip any overflow when the image is fixed */
 }
-.sponsor-image{
+.sponsor-image-container3{
+ position: relative;
+  /* Set the desired width and height of the image container */
+  width: 300px;
+  height: auto;
+  overflow: hidden; /* To clip any overflow when the image is fixed */
+}
+.sponsor-image1{
 	float: top;
 	margin-right: 10px;
 	width: 98%;
@@ -332,6 +339,16 @@ h6 {
         border: 1px solid gray;
 }
 .sponsor-image2{
+	float: top;
+	margin-right: 10px;
+	width: 98%;
+	height: 98%;
+	position: relative;
+        top: 0px;
+        left: 0px;
+        border: 1px solid gray;
+}
+.sponsor-image3{
 	float: top;
 	margin-right: 10px;
 	width: 98%;

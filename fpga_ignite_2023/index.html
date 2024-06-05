@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPGA Ignite Summer School 2023</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Banner image placeholder -->
+    <img class="banner-image" src="./bgimage.jpg" alt="Banner Image">
+
+        <nav class="title-banner">
+        <a href="#program-section" class="nav-link">Program</a>
+        <a href="#presentations-section" class="nav-link">Presentations</a>
+        <a href="#online-section" class="nav-link">Online-access</a>
+        <a href="#instructions-section" class="nav-link">Instructions</a>
+        <a href="#registration-section" class="nav-link">Registration</a>
+        <a href="#organizers-section" class="nav-link">Organizers</a>
+        <a href="#venue-section" class="nav-link">Venue</a>
+        <a href="#contact-section" class="nav-link">Contact</a>
+        <a href="#lecturers-section" class="nav-link">Lecturers</a>
+    </nav>
+    <!-- Acknowledgment -->
+    <section id="ack-section" class="wave-animation">
+	    <h2>Kindly supported by <b><a href="https://www.carl-zeiss-stiftung.de/en/" target="_blank">Carl-Zeiss-Stiftung</a></b></h2>
+	    <p>The FPGA Ignite Summer School series is a forum for bringing together established and new researchers in the field of reconfigurable computing and FPGAs.<br>
+	       The goal is to identify and form new trends, educate people and facilitating collaborations within the reconfigurable computing community.<br>
+               FPGA Ignite 2023 will have a strong emphasis on open-source hardware and tools.<br>
+               Topics include HLS tools, Logic Synthesis (including interesting specialties for research), FPGA Place&Route as well as FPGA chip design.<br>
+               During a hackathon on the last day, attendees will design an FPGA with custom tiles that will be manufactured in Sky130 technology.<br>
+               Attendees will receive a board with that chip some time after the event.
+	    </p>
+    </section>
+
+    <!-- online -->
+    <section id="online-section" class="wave-animation">
+	    <h2>Online access</h2> 
+	    <p> You can join the following zoom link for the onsite presentations:
+               <b><a href="https://zoom.us/j/98788640815" target="_blank">Zoom-link</a></b>
+	    </p>
+    </section>
+
+    <!-- Instructions -->
+    <section id="instructions-section" class="wave-animation">
+	    <h2>Instructions</h2> 
+	    <p> The summer school labs have been embedded within virtual mahine images along with all the required software. Here, you can find the instructions on downloading and installing Virtual Machine software like VirtualBox and KVM/QEMU as well the corresponding VM-images.</p>
+
+	    <h5>Quick notes on the installation of Virtual Machines (Virtual Box and KVM/QEMU)</h5>
+	    <ol>
+		    <li><h4> Virtual Machine Software (Host)</h4>
+
+            The virtual machine (VM) image is available in VDI-format for VirtualBox and QCOW2-Format for KVM/QEMU.
+            
+            If you have already VirtualBox or KVM/QEMU installed, continue to (2).
+            
+            Decide which virtual machine software to install. If unsure, use VirtualBox (easier installation).
+            
+            Download VirtualBox for your system here:
+	    <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Download links for VirtualBox</a> (Install and follow the instructions in the link provided).</li>
+
+		    <li><h4>Extract Virtual Machine</h4>
+            
+            The VM-image is available in two formats. You need only the one that fits to the virtual machine software that you installed.
+            
+	    The image itself is compressed using 7zip to save space; it needs to be extracted before starting. If you haven't 7zip installed, install it using the appropriate binary provided in the package (linux, macos, windows, 32- and 64-bit). You can download 7-zip from here: <a href="https://www.7-zip.org/download.html" target="_blank">Download links for 7-zip</a>
+            
+	    Then extract the image using 7zip. The extracted image needs at least 64GB free disk space.</li>
+            
+            
+		    <li><h4> Start Virtual Machine</h4>
+            
+			    Using the virtual machine software you chose, create a new virtual machine wich has at least Two CPUs and 20GB of RAM (more is better), and open the corresponding image. Then, start the virtual machine and you should see the Debian-system booting to the graphical login screen.  Done!</li>
+            </ol>
+            
+	    <h5> Detailed notes on Virtual Machine installation for Linux, Windows and MAC OS:</h5>
+	    If you need further details and common instructions and installers for your specific operating system, please check this link:
+	    <a href="https://www.dropbox.com/scl/fo/py0jdnujttt8zteutivo2/h?rlkey=xo4s37rigvvpcta063llnpcf0&dl=0" target="_blank">Further Instructions & Installers</a>
+
+	    <h5>Link for the Virtual Machine Images:</h5>
+	      <ul>
+		      <li>Compressed VM-image for qemu/kvm:</h6> <a href="https://www.dropbox.com/scl/fi/5njqvcxf3uas5mjszdyur/FPGAIgnite2023a.qcow2.7z?rlkey=0ezf7e56izvxmq8cyckwthpwq&dl=0" target="_blank">KVM/QEMU VDI Image</a></li>
+	      <li>Compressed VM-image for Virtual Box/VMware:</h6> <a href="https://www.dropbox.com/scl/fi/14cme14fofccoyutwjfwj/FPGAIgnite2023a.vdi.7z?rlkey=79xcfcv0dklort4mpx4ub0oln&dl=0" target="_blank">VirtualBox/VMware VDI Image</a></li>
+	      </ul>
+    </section>
+    <!-- Program -->
+    <section id="program-section" class="wave-animation">
+        <h2>Program</h2>
+           <div class="day-grid">
+               <div class="day">
+                  <h6>Day 1 (July 31st)</h6>
+                    <ul>
+			<li><h4>from 9:30</h4>Registration and welcome coffee</li>
+			<li><h4>10:00 – 10:25</h4> Welcome to Heidelberg and FPGA Ignite 2023</li>
+			<li><h4>10:30 – 12:30</h4> <b>Lightning talks</b></li>
+                        <li><h4>12:30 – 13:45</h4> Lunch (Bräustüble)</li>
+			<li><h4>13:45 – 15:00</h4> Keynote <b>LegUp High-Level Synthesis and its Commercialization</b> Prof. <a href="#jason-id">Jason Anderson</a>, University of Toronto, CA</li>
+			<li><h4>15:00 – 16:00</h4> Attendee Poster Session <a href="#presentations-id">(click here for more details)</a></li>
+			<li><h4>16:00</h4> Hike to <a href="https://en.wikipedia.org/wiki/Neuburg_Abbey" target="_blank">Neuburg Abbey</a> (over the <a href="https://www.heidelberg-marketing.de/poi/philosophenweg" target="_blank">Philosophers’ Walk</a>) and dinner (18:00) at <a href="https://gasthof-zum-klostergarten.de/" target="_blank">Klostergarten</a></li>
+                   </ul>
+               </div>
+               <!--  -->
+               <div class="day">
+		       <h6>Day 2 (August 1st)</h6>
+		       <h5>High-Level-Synthesis (<a href="#jason-id">Jason Anderson</a>) <a href="https://janders.eecg.utoronto.ca/ignite/" target="_blank">click here for the materials</a></h5>
+                    <ul>
+			<li><h4>8:45 </h4> Registration
+				<li><h4>9:00 – 12:30</h4> Morning classes (Coffee break at 10:30)
+				    <ul class="custom-bullet">
+					    <li> What is HLS (and what are its limitations) </li>
+					    <li> How does it work </li>
+					    <li> How to use HLS </li>
+				    </ul>
+			    </li>
+			    <li><h4>12:30 – 13:45</h4> Lunch <a href="https://ristorante-roseto.de/speisekarte/" target="_blank">(Rosetto)</a></li>
+                        <li><h4>13:45 – 17:00</h4>Afternoon labs (Coffee break at 15:15)</li>
+			<li><h4>18:00</h4> Dinner (<a href="https://www.tripadvisor.de/Restaurant_Review-g187286-d1320219-Reviews-Zeughaus_Mensa_Im_Marstall-Heidelberg_Baden_Wurttemberg.html" target="_blank">Marstall Mensa</a>)</li>
+			<li><h4>19:30-21:00</h4>Guided City Tour (Start: <a href="https://www.google.com/maps/place/Universit%C3%A4tsplatz/@49.4107729,8.7042199,17z/data=!3m1!4b1!4m6!3m5!1s0x4797c1b7d64bb0d1:0x73e6065579aa5700!8m2!3d49.4107729!4d8.7064086!16s%2Fg%2F11ng_5ly6v?entry=tts&shorturl=1" target="_blank">Universitätsplatz</a>)</li>
+                   </ul>
+               </div>
+
+               <!--  -->
+               <div class="day">
+		       <h6>Day 3 (August 2nd)</h6>
+		       <h5>Logic Synthesis with Yosys  (<a href="#nina-id">Nina Engelhardt</a>, YosysHQ) <a href="./yosys/FPGA Ignite Yosys Course 2023-08-02-3.pdf" target="_blank">Presentation</a> / <a href="./yosys/FPGAIgnite2023Yosys.zip" target="_blank">Lab materials</a> / <a href="./yosys/SOLUTIONFPGAIgnite2023Yosys.zip" target="_blank">Solution</a></h5>
+                    <ul>
+			    <li><h4>8:45 </h4>	Registration </li>
+			<li><h4>9:00 – 12:30</h4> Morning classes 
+				    <ul class="custom-bullet">
+					    <li> <b>Basics of Logic Synthesis</b> </li>
+					    <li> <b>Yosys for scientific research</b><br> 
+					        (data formats, circuit transformations, custom plugins)
+					    </li>
+				    </ul>
+			</li>
+                        <li><h4>12:30 – 13:45</h4> Lunch (Mensa)</li>
+                        <li><h4>13:45 – 17:00</h4>Afternoon labs (Coffee break at 15:15)</li>
+			<li><h4>19:00</h4> Evening Event (<a href="https://heidelberger-kulturbrauerei.de/" target="_blank">Kulturbrauerei Heidelberg</a>)</li>
+                   </ul>
+               </div>
+
+               <!--  -->
+               <div class="day">
+		       <h6>Day 4 (August 3rd)</h6>
+                    <ul>
+			<li><h4>8:45 </h4> Registration</li>
+
+			<li><h4>9:00 – 10:30</h4> Morning classes (Coffee break at 10:30)
+				<ul class="custom-bullet"><h5><b>FABulous</b> (Dirk Koch, Heidelberg University) <a href="./fabulous/FABulous_Tutorial.pdf" target="_blank">Labs</a> / <a href="./fabulous/FPGA_Ignite_fabulous.pdf" target="_blank">Slides</a> </h5>
+					    <li> Defining FPGA fabrics </li>
+					    <li> ASIC code generation </li>
+					    <li> CAD tool integration </li>
+				    </ul>
+			</li>
+
+			<li><h4>11:00 – 12:30</h4>  Morning classes
+			    <ul class="custom-bullet"> 
+				    <li> Bitstream generation for FABulous FPGAs </li>
+				    <li> nextpnr (<a href="#rowan-id">Rowan Goemans</a>) <a href="./nextpnr/FPGA_Ignite_nextpnr.pdf" target="_blank">Slides</a> </li>
+			    </ul>
+			</li>
+
+                        <li><h4>12:30 – 13:45</h4> Lunch (Bräustüble)</li>
+			<li><h4>13:45 – 15:15</h4> Open-source ASIC design (<a href="#nguyen-id">Nguyen Dao</a> [<a href="./eFPGA/FPGA_Ignite23_Custom_eFPGA_opensource.pdf" target="_blank">eFPGA_Slides</a>], <a href="#gavaskar-id">Gavaskar</a>)
+				    <ul class="custom-bullet">
+					    <li> OpenLane tool (Verilog to GDS2) </li>
+					    <li> KLayout </li>
+				    </ul>
+			</li>
+                        <li><h4>15:15 – 15:45</h4> Coffee break </li>
+                        <li><h4>15:45 – 17:00</h4> Labs </li>
+                   </ul>
+               </div>
+
+               <!--  -->
+               <div class="day">
+		       <h6>Day 5 (August 4th)</h6>
+		       <h5>Hackathon </h5>
+                    <ul>
+		<li><h4>9:00 – 10:30</h4><b>From Zero to ASIC</b> in a nutshell (<a href="matthew-id">Matt Venn</a>)</li>
+		<li><h4>from 10:30</h4><b>Happy FPGA Hacking</b>  
+		    <ul class="custom-bullet">(design a custom FPGA Tile; supported by <a href="#nguyen-id">Nguyen</a>, <a href="#myrtle-id">Myrtle</a>, and <a href="#gavaskar-id">Gavaskar</a>)
+			<li><a href="./openlane/OpenLaneTutorial-HardeningtheCore.pdf" target="_blank">OpenLane_Tutorial: Hardening the core</a></li>
+			<li><a href="./openlane/OpenLaneTutorial-HardeningMacros.pdf" target="_blank">OpenLane_Tutorial: Hardening Macros</a></li>
+			<li><a href="./openlane/KG_OpenLane-1.pdf" target="_blank">Open Source Asic Design</a></li>
+		    </ul>
+		</li>
+		<li><h4>16:30</h4> Pizza and <b>Best Design Award</b></li>
+                   </ul>
+               </div>
+    </section>
+    <!-- Presentations -->
+    <section id="presentations-section" class="wave-animation">
+        <h2>Presentations</h2>
+    <div class="table-container">
+    <table class="slick-table">
+        <tr>
+            <th>Presenter</th>
+            <th>Bio</th>
+            <th>Title</th>
+            <th>Abstract</th>
+            <th>Co-authors</th>
+            <th>PDF</th>
+        </tr>
+        <!-- Presentation 1 -->
+        <tr>
+            <td>Hassan Nassar </td>
+            <td>Hassan Nassar received the B.Sc. degree (Highest Hons.) from German University in Cairo, New Cairo City, Egypt, in 2016, and the M.Sc. degree from Ulm University, Ulm, Germany, in 2019. He joined the Chair for Embedded Systems in March 2020 as a Research Assistant. His research interests are hardware security, reconfigurable architectures, memory reliability, and cloud FPGAs.
+I consent to adding the information to the website
+Slides are attached. </td>
+            <td>LoopBreaker: Disabling Interconnects to Mitigate Voltage-Based Attacks in Multi-Tenant FPGAs </td>
+            <td>LoopBreaker is a a novel runtime solution designed to mitigate FPGA fault attacks in cloud environments. These attacks can be launched by malicious tenants to cause timing faults or crashes in other regions. Unlike existing offline countermeasures that have limitations and may reveal design secrets, LoopBreaker operates online and can disable the entire activity of a malicious tenant region within a rapid timeframe of 1.5 µs, preventing potential Denial-of-Service (DoS) crashes effectively. </td>
+            <td>Hanna Alzughbi, Dennis Gnad, Lars Bauer, Mehdi Tahoori, Joerg Henkel </td>
+	    <td><a href="./presentations-pdf/nassar.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 2 -->
+        <tr>
+            <td>Dominik Walter </td>
+            <td>Dominik Walter received his M.Sc. degree in computer science from University of Augsburg, Germany, in 2019.
+                Since then, he is researching massively parallel processor architectures at the chair for Hardware/Software Co-design (FAU).</td>
+            <td>ALPACA: Asic LooP ACcelerAtor</td>
+            <td>The ASIC Loop Accelerator - ALPACA for short - is a fully fledged ASIC in 22~nm FDSOI technology.
+                It consists of 64 processing elements, each capable of processing 3 32-bit floating point vector instructions simultaneously.
+                The chip contains 6 million standard cells on a chip area of 10 square millimetres and was manufactured by Global Foundries in Dresden, Germany.
+	    </td>
+            <td>Marcel Brand, Christian Heidorn, Dominik Walter, Michael Witterauf, Frank Hannig, Jürgen Teich</td>
+            <td>Onsite</td>
+        </tr>
+        <!-- Presentation 3 -->
+        <tr>
+            <td>Werner Florian Samayoa</td>
+            <td>Werner Florian Samayoa received the B.S. degree in electronics engineering from the University of San Carlos, Guatemala, in 2018. He is currently pursuing the Ph.D. degree in industrial and information engineering with the Multidisciplinary Laboratory (MLab), The Abdus Salam International Center for Theoretical Physics, Universitã degli Studi di Trieste, under the Joint-Supervision Program. His research interest includes scalable reconfigurable supercomputing.</td>
+            <td>HyperFPGA experimental reconfigurable supercomputing platform </td>
+            <td>The HyperFPGA is a scalable SoC-FPGA-based cluster aimed at exploring reconfigurable high-performance computing. HyperFPGA offers a flexible and programmable infrastructure that combines field-programmable gate arrays (FPGAs) with CPUs and high-speed general-purpose connectors. The flexibility of the platform extends to communication protocols at the hardware level, ideal for experimenting with novel architectures and interconnects. A Linux OS and custom driver, along with a Message Passing Interface (MPI), offer a programmable framework for firmware and task deployment. Overall, the testing of HyperFPGA using the N-Queens problem highlights the platform's ability to handle computationally intensive tasks and suggests its suitability for use in supercomputing.</td>
+            <td>Maria Liz Crespo, Sergio Carrato, Agustin Silva, Andres Cicuttin</td>
+            <td>Onsite</td>
+        </tr>
+        <!-- Presentation 4 -->
+        <tr>
+            <td>Marko Andjelkovic</td>
+            <td>Dr.-Ing. Marko Andjelkovic received Dipl-Ing. degree in Electronics from the Faculty of Electronic Engineering, University of Nis (Serbia), in 2008. In 2021, he has received Dr.-Ing. degree in the field of fault tolerance in computing architectures, from the University of Potsdam (Germany). Since 2016 he is with IHP, where he is employed as a scientific researcher at the System Architectures department. His research is related to the characterization and modeling of fault effects in CMOS digital circuits, on-chip fault sensing, and design of fault-tolerant circuits and systems.</td>
+            <td>Towards a Rad-Hard Baseband Processor for 6G Non-Terrestrial Networks</td>
+            <td>The next generation of mobile communication systems, i.e., 6G communication networks, aim to achieve global, secure, reliable and intelligent connectivity by integrating terrestrial networks with airborne networks (drones, helicopters, etc.) and spaceborne networks (orbital satellites). To achieve this goal, new technologies and components are required. In this work, we present the initial design concept of a radiation-hardened baseband processor for satellite communications within 6G networks.</td>
+            <td>Nebojsa Maletic, Milos Krstic</td>
+	    <td><a href="./presentations-pdf/marko.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 5 -->
+        <tr>
+            <td>Junchao Chen</td>
+            <td>Junchao Chen received the Dr.-Ing degree from the Potsdam University, Germany, in 2023, on the topic of ”A Self-adaptive Resilient Method for Implementing and Managing High-reliability Processing Systems.” Since 2018, he has been a member of Prof. Milos Krstic’s ”Fault-tolerance Computing” research group at IHP Microelectronics in Frankfurt (Oder), Germany. His research interests include self-adaptive fault-tolerance mechanisms, radiation-induced effects, high-reliability system design, and agile hardware development. Throughout his academic career, he has participated in several international and national research projects. He has published over 20 journal and conference papers and has been granted one patent.</td>
+            <td>The TETRISC SoC - A Robust Quad-Core High Resilience System</td>
+            <td>ault-tolerant systems are typically designed for worst-case scenarios and offer sub-optimal performance during normal operation. Configurable systems that adapt to changing circumstances can improve this situation. This poster presents a design of TETRISC SoC, which is a multiprocessor system based on the Pulpissimo platform that uses various reliability sensors to operate its four cores in different performance and fault tolerance modes as needed. This adaptable solution provides optimal performance and reliability for use cases with high requirements, such as avionics or aerospace.</td>
+            <td>Rizwan Tariq Syed, Marko Andjelkovic, Lara Wimmer, Eckhard Grass, Markus Ulbricht, and Milos Krstic</td>
+	    <td><a href="./presentations-pdf/junchao.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 6 -->
+        <tr>
+            <td>Anis Hamadouche</td>
+            <td>Anis Hamadouche is a final-year PhD student from Heriot-Watt University. Mr. Hamadouche’s work consists of theoretically analyzing the performance of iterative optimization algorithms, such as proximal algorithms and alternating direction  method of multipliers (ADMM), when the internal operations of the algorithms are executed with errors. The types of errors considered stem from approximations at hardware and software levels, for example, quantization under different types of numerical representations, including fixed- and floating-point representations. Although this work is very theoretical, it has wide-ranging implications. In fact, in contrast with prior work, it considers realistic error models and implementation in platforms like FPGAs. Mr. Hamadouche’s PhD is associated with the UDRC Phase III programme (https://udrc.eng.ed.ac.uk/), sponsored by UKRI’s EPSRC and the MoD. And, in this context, he has explored applications in control and image processing.</td>
+            <td>Design and Implementation of Approximate Operator Splitting Algorithms On FPGA</td>
+            <td>Any algorithm requires a computational platform to run. Some platforms, however, have limited size, power, or energy, especially if they are battery-operated. Examples include cell phones, unmanned vehicles like flying drones, or tiny sensors. Yet, they need to process information to make inferences about a signal or to compute a trajectory, which is done by running algorithms that often require a considerable amount of computation. Our goal is to investigate ways to reduce the total amount of power/energy/size of an algorithm by considering the full computational stack: from the task itself, to its algorithmic implementation, basic linear algebra operations, software, and hardware. Indeed, in each of these layers, there exist techniques to reduce power/energy/size, for instance, by reducing voltage or frequency, selecting a lower precision for representing numbers, or using approximate algorithms in linear algebra operations. However, such techniques are almost always considered in isolation without taking into account the impact on the downstream task. In this WP, we took a holistic view on this set of approximations and developed strategies to select the most effective approximations without undermining the task at hand. We thus made several experimental and theoretical contributions to the field.</td>
+            <td>Yun Wu, Andrew M. Wallace, and Joao F. C. Mota</td>
+	    <td><a href="./presentations-pdf/anis.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 7 -->
+        <tr>
+            <td>Anthony Etim</td>
+            <td>Anthony Etim is a second year Ph.D. student at Computer Architecture and Security Lab, Yale University. His research interests lie in Computer architecture and Security, especially focusing on cloud infrastructures and the security of FPGA-accelerated cloud environments by evaluating and defending various types of side channels and covert channels, as well as how to enable secure multi-tenant Cloud FPGAs.</td>
+            <td>Thermal Covert Channels on smartSSDs</td>
+            <td>Continued expansion of cloud computing offerings now includes SmartSSDs. Because of the FPGA component of the SmartSSD, cloud users who access the SmartSSD can instantiate custom circuits within the FPGA. This includes possibly malicious circuits for measurement of power and temperature. Normally, cloud users have no remote access to power and temperature data, but with SmartSSDs they could abuse the FPGA component to learn this information. This work shows for the first time that heat generated by a cloud user accessing the SSD component of the SmartSSD and the resulting temperature increase, can be measured by a different cloud user accessing the FPGA component of the same SmartSSD by using the ring oscillator (RO) circuits to measure temperature. The thermal state remains elevated for a few minutes after the SSD is heated up and can be measured from the FPGA side by a subsequent user for up to a few minutes after the SSD heating is done. Based on this temporal thermal state of the SmartSSD, a novel thermal communication channel is demonstrated for the first time.</td>
+            <td>Theodoros Trochatos and Jakub Szefer</td>
+	    <td><a href="./presentations-pdf/etim.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 8 -->
+        <tr>
+            <td>Ingo Hoyer</td>
+            <td>Ingo Hoyer has received a bachelors and masters degree in electrical engineering from the Technical University of Darmstadt, Germany. Since June 2022 he is PhD student at Fraunhofer IMS in Duisburg, Germany. His research interests are AI accelerators, RISC-V and reconfigurable hardware.</td>
+            <td> </td>
+            <td>In recent years, RISC-V-based SoC implementations for local signal processing has become a focus of the department for Smart Sensor Systems at Fraunhofer IMS. Challenges of adaptability, power constraints and performance requirements have been addressed using instruction set extensions such as single instruction multiple data operations as well as designated peripheral neural network accelerators. Implementing flexible fabrics into the SoC solutions brings new opportunities for the applications in various domains, e. g. biosignal analysis, industrial condition monitoring or smart farming.</td>
+            <td>Alexander Utz, Holger Kappert and Karsten Seidl</td>
+            <td>Onsite</td>
+        </tr>
+        <!-- Presentation 9 -->
+        <tr>
+            <td>Robin Heinemann</td>
+            <td>Robin Heinemann is a masters student at the university of Heidelberg. Since 2018 he is part of the apertus open source cinema project, developing software, hardware and HDL for open source cinema cameras.
+Jaro Habiger is a student at the University of Applied Arts Vienna. Since 2017 he is part of the apertus project developing open source cinema cameras. He has been part of art-projects involving FPGAs and video processing.
+</td>
+            <td>naps</td>
+            <td>The `naps` package is a collection of video focused IP-cores combined with advanced code generation for SoC use cases. Using Amaranth HDL, it facilitates rapid co-development by enabling HDL and software to be written in the same language and comined in the same python class hierarchy.
+Python software code can transparently access control and status registers (CSRs) allowing even interactive exploration of the combined HDL and software system.</td>
+            <td>Jaro Habiger</td>
+	    <td><a href="./presentations-pdf/robin.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 10 -->
+        <tr>
+            <td>Sara Hoseininasab</td>
+            <td>Sara Hoseininasab is currently working toward a Ph.D. degree in computer science at the University of Rennes, Rennes, France, under the supervision of Steven Derrien and Caroline Collange. She received an M.Sc. degree from the University of Isfahan, Isfahan, Iran. Her research interests include computer architecture, hardware design, and high-level synthesis. Contact her at sara-sadat.hoseininasab@inria.fr.</td>
+            <td>Rapid Prototyping of Complex Micro-architectures through High-Level Synthesis</td>
+            <td>In this work, we show how to exploit HLS features to synthesize complex micro-architectures without delving into RTL implementation. We take advantage of multi-threading and dynamic scheduling to synthesis various classes of micro-architectures by HLS from an Instruction Set Simulator(ISS) written in C.</td>
+            <td>Caroline Collange, Steven Derrien</td>
+	    <td><a href="./presentations-pdf/sara.pdf" target="_blank">PDF</a></td>
+        </tr>
+        <!-- Presentation 11 -->
+        <tr>
+            <td>Andreas Erbslöh</td>
+            <td>Andreas Erbslöh received the master’s degree in electrical engineering and the Dr.-Ing. degree from the University of Duisburg-Essen, Germany, in 2015 and 2021, respectively. Currently, he is working as a scientific researcher with the Department of Embedded Systems. His research interests include methods and corresponding CMOS circuit design for the simultaneous electrical stimulation and recording of neural activities, including hardware friendly integration of low-power neural signal processing (e.g. spike sorting) and neural decoders for future neural devices.</td>
+            <td> </td>
+            <td>This paper presents the elasticAI workflow for creating and deploying deep learning accelerators for embedded systems. This workflow considers the model training with hardware templates with PyTorch, the Synthesis of the model in Vivado and the hardware run on the FPGA. These accelerators can be used as neural signal processor in future neural devices like retinal implants and brain computer interfaces in order to restore sensory loss due to neurogenerative diseases.</td>
+            <td>Chao Qian, Lukas Einhaus, Leo Buron, Andreas Erbslöh, Gregor Schiele</td>
+	    <td><a href="./presentations-pdf/andrea.pdf" target="_blank">PDF</a></td>
+        </tr>
+    </table>
+    </div>
+    </section>
+
+    <!-- Main sponsor -->
+    <section id="venue-section" class="wave-animation">
+        <h2>Main Sponsor</h2>
+	<div class="sponsor-image-container">
+        <img src="./logos/carl-zeiss.png" alt="Sponsor Image1" class="sponsor-image">
+	</div>
+	<p><b><a href="https://www.carl-zeiss-stiftung.de/en/" target="_blank">Carl-Zeiss-Stiftung</a></b></p>
+	<p><b>Further support</b> is proved through the <b><a href="https://forte.ac.uk/" target="_blank">UK EPSRC programme grant FORTE</a></b> (grant agreement EP/R024642/1)</p>
+	<div class="sponsor-image-container2">
+        <img src="./logos/forte-whitebg.png" alt="Sponsor Image2" class="sponsor-image2">
+	</div>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration-section" class="wave-animation">
+        <h2>Registration</h2>
+        <p>Thanks to support from Carl-Zeiss-Stiftung, FPGA Ignite 2023 is free of charge to attend. 
+           (Attendees will have to arrange/pay travel and accommodation on their own. The Central Hotel and the Ibis are in walking distance to the main train station and the venue and usually reasonably priced) 
+	   <br><b>All FPGA Ignite 2023 places have been taken, and we cannot accept any further application.</b>
+	   <br><b>Thanks for your understanding!</b> </p>
+    </section>
+
+    <!-- Venue -->
+    <section id="venue-section" class="wave-animation">
+	<div>
+        <h2>Venue</h2>
+	<p>The first day, the classes and the Hackathon will take place at the <a href="https://www.uni-heidelberg.de/de/newsroom/kaethe-leichter-forum-wird-eroeffnet-neues-zentrum-fuer-doktorandinnen-und-doktoranden" target="_blank">Käthe Leichter Forum</a> (Graduiertenakademie)
+Address: Im Neuenheimer Feld 370, 69120 Heidelberg </p>
+	</div>
+	<div class="venue-image-container">
+		<a href="https://goo.gl/maps/kU8aQfQEBXgsAvsg8" target="_blank">
+             <img src="images/map.png" alt="map" >
+	        </a>
+             <img src="images/venue.png" alt="venue">
+	</div>
+	</div>
+    </section>
+
+    <!-- Hotels -->
+    <section "hotel-section" class="wave-animation">
+        <h2>Hotels</h2>
+        <p>It is usually best to directly book a hotel through a major portal.
+Hotel Central and the IBIS are close to the main train station and in walking distance to the campus.
+From the old city, you can take bus 31 or 32 from <a href="https://www.google.com/maps/place/Universit%C3%A4tsplatz/@49.4112312,8.7058821,18.17z/data=!4m6!3m5!1s0x4797c10424446f9d:0xdad782a1bf539220!8m2!3d49.4110617!4d8.7057859!16s%2Fg%2F121c9r3c?entry=tts&shorturl=1" target="_blank">Universitätsplatz</a> to stop Kampus Neuenheimer Feld. </p>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers-section" class="wave-animation">
+        <h2>Organizers</h2>
+	<p>Dirk Koch, Alexander Schubert, Myrtle Shah,and Riadh Ben Abdelhamid, <a href="https://www.ziti.uni-heidelberg.de/ziti/de/institut/forschung/ag-nct" target="_blank">Novel Computing Technologies</a>, ZITI, Heidelberg University <br>
+	Daniel Ziener, <a href="https://www.tu-ilmenau.de/en/university/departments/department-of-computer-science-and-automation/profile/institutes-and-groups/institute-of-computer-and-systems-engineering/group-for-computer-architecture-and-embedded-systems" target="_blank">Computer Architecture and Embedded Systems</a>, TU Ilmenau
+ </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-section" class="wave-animation">
+        <h2>Contact</h2>
+        <p>
+	Prof. Dirk Koch <br>
+	Novel Computing Technologies<br>
+	Universität Heidelberg<br>
+	Institut für Technische Informatik (ZITI)<br>
+	Im Neuenheimer Feld 368, 69120 Heidelberg<br>
+	dirk.koch@ziti.uni-heidelberg.de 
+	</p>
+    </section>
+
+    <!-- keynote -->
+    <section id="keynote-section" class="wave-animation">
+        <h2>Keynote</h2>
+	<h3>LegUp High-Level Synthesis and its Commercialization, <a href="#jason-id">Jason Anderson</a></h3>
+        <p> High-level synthesis (HLS) raises the level of abstraction for hardware design by allowing a software program to be automatically synthesized into a hardware circuit.  HLS holds the promise to reduce both the costs and time required for hardware design, and eventually, to bring the speed and energy benefits of hardware to those having solely software skills.  In this talk, I will overview the open-source LegUp HLS project, beginning with its genesis at the University of Toronto, and highlighting LegUp's key features relative to competing commercial and academic offerings.  LegUp HLS became the basis of a startup company, spawned in 2015 and ultimately acquired by Microchip in 2020.  I will describe the commercialization process, touching on issues surrounding IP ownership, incorporation, raising funds, and more, and recount some of the highlights and pitfalls along the journey.</p>
+    </section>
+
+    <!-- Lecturers -->
+    <section id="lecturers-section">
+        <h2>Lecturers</h2>
+        <div class="lecturers-grid">
+            <!-- Lecturer 1 -->
+            <div class="lecturer">
+		<div class="lecturer-image-wrapper">
+                   <img src="lecturers/jason.png" alt="Lecturer 1" class="lecturer-image">
+		</div>
+		<div class="lecturer-text" id="jason-id">
+                   <h3>Jason Anderson</h3>
+                   <p>Jason Anderson is a Professor in the Dept. of Electrical and Computer Engineering, University of Toronto, where he holds the Jeffrey Skoll Endowed Chair.  His research interests include design methodologies, architecture, circuits and applications of reconfigurable hardware.  Prior to joining the university, he spent 10 years in the industry at Xilinx, Inc., in San Jose, CA and Toronto, where he worked on commercial CAD tools for Xilinx FPGAs, both as an individual contributor and later, as a manager.  He is an inventor on over 30 issued U.S. patents, has co-authored 4 book chapters, and over 100 papers in peer-reviewed journals and international symposia.  In 2015, he co-founded LegUp Computing Inc. with three former graduate students to commercialize his team’s research on high-level synthesis (HLS).  The LegUp startup company received investment funding from Intel Capital in 2018, and was acquired in October 2020 by Microchip Technology.  LegUp HLS technology has been commercialzed as SmartHLS and is available to target Microchip FPGAs.  He is an IEEE Fellow (class of 2023).</p>
+                </div>
+            </div>
+
+            <!-- Lecturer 2 -->
+            <div class="lecturer">
+		<div class="lecturer-image-wrapper">
+                    <img src="./lecturers/nina.png" alt="Lecturer 2" class="lecturer-image">
+		</div>
+		<div class="lecturer-text" id="nina-id">
+                    <h3>Nina Engelhardt</h3>
+                    <p>Nina Engelhardt is CEO of YosysHQ while also being involved heavily in the technical side of Yosys. (With a background in FPGA-based graph processing they are used to dealing with interconnected systems that have a lot of things going on simultaneously.) Nina manages the twitter account of their two cats, and galvanize their co-workers by seamlessly switching between 4 languages.</p>
+                </div>
+            </div>
+
+            <!-- Lecturer 3 -->
+            <div class="lecturer">
+		<div class="lecturer-image-wrapper">
+                    <img src="./lecturers/mathew.png" alt="Lecturer 3" class="lecturer-image">
+		</div>
+		<div class="lecturer-text" id="matthew-id">
+                    <h3>Matthew Venn</h3>
+		    <p>Matthew Venn is a science & technology communicator and electronic engineer. He brings 20 years of engineering experience to create excellent and innovative learning experiences for people all over the world. Matt designed the Zero to ASIC Course.<br>
+		    Websites:<br>
+		    <a href="https://www.zerotoasiccourse.com/">https://www.zerotoasiccourse.com/</a><br>
+		    <a href="https://github.com/mattvenn">https://github.com/mattvenn</a><br>
+		    <a href="https://twitter.com/matthewvenn">https://twitter.com/matthewvenn</a></p>
+                </div>
+            </div>
+            <!-- Lecturer 4 -->
+            <div class="lecturer">
+		<div class="lecturer-image-wrapper">
+                    <img src="./lecturers/myrtle.png" alt="Lecturer 4" class="lecturer-image">
+		</div>
+		<div class="lecturer-text" id="myrtle-id">
+		    <h3>Myrtle Shah </h3>
+                    <p>Myrtle Shah is the maintainer of the open source nextpnr place-and-route tool, providing an alternative flow for several commercial FPGA families with thousands of users worldwide.
+After some time working as a contractor, they are currently a researcher and PhD student at Heidelberg University, working on further developing the opportunities for open infrastructure in the FPGA ecosystem.</p>
+                </div>
+            </div>
+            <!-- Lecturer 5 -->
+            <div class="lecturer">
+		<div class="lecturer-image-wrapper">
+                     <img src="./lecturers/gavascar.jpeg" alt="Lecturer 5" class="lecturer-image">
+		</div>
+		<div class="lecturer-text" id="gavaskar-id">
+                     <h3>K. Gavaskar</h3>
+                     <p>K. Gavaskar is a post-doctoral researcher with ZITI, Heidelberg Universit. He obtained his BE degree in Electronics and Communication Engineering from Sri Ramakrishna Institute of Technology, Tamil Nadu, India, in 2011, his M.E. degree in VLSI Design from Bannari Amman Institute of Technology, Tamil Nadu, India, in 2013, and completed his Ph.D. degree in the area of Low Power VLSI Memory Design at Anna University, Chennai, India, in 2020. He has 9.9 years of teaching experience at Kongu Engineering College, Tamil Nadu, India. He has published more than 40 papers in journals and conferences. His area of interest includes ASIC implementation of analog and digital circuit designs.</p>
+                </div>
+            </div>
+            <!-- Lecturer 6 -->
+            <div class="lecturer">
+		<div class="lecturer-image-wrapper">
+                     <img src="./lecturers/nguyen.png" alt="Lecturer 6" class="lecturer-image">
+		</div>
+		<div class="lecturer-text" id="nguyen-id">
+                     <h3>Nguyen Dao</h3>
+                     <p>Nguyen Dao obtained a Bachelor's degree in Vietnam in 2007. He began his professional journey at Renesas Electronic Vietnam, where he served as a senior hardware design engineer from 2007 to 2010. He then earned both a Master's degree (2012) and a Ph.D. degree (2017) in Sydney, Australia. In 2018, Nguyen joined The University of Manchester as a Research Associate. During this period, his focus was on the integration of memristor ReRAM on Digital Reconfiguration Systems - FPGAs. After his tenure at the university, he worked with Withsecure Ltd. for a year (2022) before joining Agile Analog Ltd. as a staff hardware design engineer. His research and work focus on ASIC designs and implementations, aiming to make significant contributions to the field of ASIC-FPGA designs and continue driving innovation in the industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
