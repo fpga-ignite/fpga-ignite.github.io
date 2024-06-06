@@ -9,7 +9,6 @@
 <body>
 
     <!-- Banner image placeholder -->
-    <img class="banner-image" src="./logos/bgimage.jpg" alt="Banner Image">
 
         <nav class="title-banner">
         <a href="#program-section" class="nav-link">Program</a>
@@ -22,9 +21,11 @@
         <a href="#contact-section" class="nav-link">Contact</a>
         <a href="#lecturers-section" class="nav-link">Lecturers</a>
     </nav>
+    <img class="banner-image" src="./logos/bgimage.jpg" alt="Banner Image">
     <!-- Acknowledgment -->
     <section id="ack-section" class="wave-animation">
 	    <p>The FPGA-Ignite Summer School Series is kindly supported by Heidelberg University, Carl-Zeiss-Stiftung, the FORTE Project and BMBF</p>
+	    <p> The summer school is one week opportunity for networking, exciting lectures and a hackathon on designing a custon RISC-V SoC (<b>that will be subsequently taped-out</b>).</p>
     </section>
 
     <!-- online -->
@@ -97,6 +98,7 @@
 	<div class="sponsor-image-container1">
         <img src="./logos/BMBF.jpg" alt="Sponsor Image1" class="sponsor-image1">
 	</div>
+	<p><b><a href="https://www.bmbf.de/" target="_blank">Bundesministerium für Bildung und Forschung</a></b></p>
 	<div class="sponsor-image-container2">
         <img src="./logos/carl-zeiss.png" alt="Sponsor Image2" class="sponsor-image2">
 	</div>
@@ -110,6 +112,7 @@
     <!-- Registration -->
     <section id="registration-section" class="wave-animation">
         <h2>Registration</h2>
+	<p> Thanks to support from Bundesministerium für Bildung und Forschung and Carl-Zeiss-Stiftung, FPGA Ignite 2024 is free of charge to attend. (Attendees will have to arrange/pay travel and accommodation on their own..) The Central Hotel and the Ibis are in walking distance to the main train station and the venue and usually reasonably priced) </p>
 	<p> Please fill in the form in this link as soon as possible as the number of seats is limited.</p>
 	<p><b><a href="https://docs.google.com/forms/d/e/1FAIpQLSc0if4g1BWTmXmGoet1F9JmVsXq2NuluBc-eqYvBY5Jh961DQ/viewform" target="_blank">Registration-Form</a></b></p>
     </section>
@@ -117,7 +120,9 @@
     <!-- Venue -->
     <section id="venue-section" class="wave-animation">
 	<div>
-		<h2>Venue</h2><p>To be announced..</p>
+        <h2>Venue</h2>
+	<p>The first day, the classes and the Hackathon will take place at the <a href="https://www.uni-heidelberg.de/de/newsroom/kaethe-leichter-forum-wird-eroeffnet-neues-zentrum-fuer-doktorandinnen-und-doktoranden" target="_blank">Käthe Leichter Forum</a> (Graduiertenakademie)
+Address: Im Neuenheimer Feld 370, 69120 Heidelberg </p>
 	</div>
 	<div class="venue-image-container">
 		<a href="https://goo.gl/maps/kU8aQfQEBXgsAvsg8" target="_blank">
@@ -178,61 +183,44 @@ From the old city, you can take bus 31 or 32 from <a href="https://www.google.co
             <!-- Lecturer 1 -->
             <div class="lecturer">
 		<div class="lecturer-image-wrapper">
-                    <img src="" alt="Lecturer 1" class="lecturer-image">
+                   <img src="./lecturers/me.jpg" alt="Lecturer 1" class="lecturer-image">
 		</div>
-		<div class="lecturer-text" id="lecturer1-id">
-                    <h3>To be announced..</h3>
+		<div class="lecturer-text" id="riadh-id">
+                   <h3>Riadh Ben Abdelhamid</h3>
+		   <p>Since 2010 until 2015 Riadh Ben Abdelhamid took an FPGA design and verification engineer role in a large Europe-based avionics company designing and verifying safety critical systems including a flight control system. Since 2015, he was a Synopsys subcontractor on their flagship FPGA emulation system ZEBU. In 2017, he was selected as a Japanese Government Scholarship (MEXT) recipient to study in Japan where he obtained his Master and PhD of Engineering in Computer Science from the University of Tsukuba in March 2020 and 2023 respectively. His research revolves around many-core processor architectures and overlays, High-Performance Computing and reconfigurable accelerators. He is also enthusiast about making his own many-core processor chip start-up.</p>
+		   <p> Riadh will give a lecture about RISC-V design from single-cycle to a multi-threaded implementation with FPGA hands-on labs.</p>
                 </div>
             </div>
 
             <!-- Lecturer 2 -->
             <div class="lecturer">
 		<div class="lecturer-image-wrapper">
-                    <img src="" alt="Lecturer 2" class="lecturer-image">
+                   <img src="./lecturers/stefan.jpg" alt="Lecturer 2" class="lecturer-image">
 		</div>
-		<div class="lecturer-text" id="lecturer2-id">
-                    <h3>To be announced..</h3>
+		<div class="lecturer-text" id="stefan-id">
+                   <h3>Stefan Wallentowitz</h3>
+		   <p>Stefan Wallentowitz is a professor at Munich University of Applied Sciences. He holds a PhD in Electrical Engineering from Technische Universität München and an MBA from RWTH Aachen University.
+		   He is currently a member of RISC-V Board of Directors, a Director at the Free and Open Source Silicon Foundation, a Member of the Board of the Security Network Munich, a Advisor on “chip innovation” at TUM Venture Labs and a member of the Steering Committee of the RISC-V Summit Europe held in Munich in June 2024.</p>
+		   <p>Stefan will talk about identifying candidates for ISA extensions and how to integrate those into the RISC-V ecosystem.</p>
                 </div>
             </div>
 
             <!-- Lecturer 3 -->
             <div class="lecturer">
 		<div class="lecturer-image-wrapper">
-                    <img src="" alt="Lecturer 3" class="lecturer-image">
+                   <img src="./lecturers/marc-andre.jpg" alt="Lecturer 3" class="lecturer-image">
 		</div>
-		<div class="lecturer-text" id="lecturer3-id">
-                    <h3>To be announced..</h3>
+		<div class="lecturer-text" id="marc-id">
+                   <h3>Marc-André Tétrault</h3>
+		   <p>Marc-André Tétrault has a Ph.D. in Electrical Engineering from Université de Sherbrooke, Canada. He is curently a Research Fellow in Harvard Medical School and in Massachusetts General Hospital.
+		   His research interests include Nuclear medical imaging and high energy physics instrumentation, Real-time embedded system and Hardware acceleration.
+		   He will be providing an open-source workshop for real-time systems that introduces a modern verification language, concepts of functional verification and of functional coverage. Participants will build a simple, customized Python-based interface between the test bench and FPGA pins using the increasingly popular Cocotb framework. 
                 </div>
             </div>
-            <!-- Lecturer 4 -->
-            <div class="lecturer">
-		<div class="lecturer-image-wrapper">
-                    <img src="" alt="Lecturer 4" class="lecturer-image">
-		</div>
-		<div class="lecturer-text" id="lecturer4-id">
-                    <h3>To be announced..</h3>
-                </div>
-            </div>
-            <!-- Lecturer 5 -->
-            <div class="lecturer">
-		<div class="lecturer-image-wrapper">
-                    <img src="" alt="Lecturer 5" class="lecturer-image">
-		</div>
-		<div class="lecturer-text" id="lecturer5-id">
-                    <h3>To be announced..</h3>
-                </div>
-            </div>
-            <!-- Lecturer 6 -->
-            <div class="lecturer">
-		<div class="lecturer-image-wrapper">
-                    <img src="" alt="Lecturer 6" class="lecturer-image">
-		</div>
-		<div class="lecturer-text" id="lecturer6-id">
-                    <h3>To be announced..</h3>
-                </div>
-            </div>
+
+
         </div>
     </section>
 </body>
-</html>
+/html>
 
