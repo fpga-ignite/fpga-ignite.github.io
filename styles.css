@@ -169,7 +169,7 @@ h3 {
 @media screen and (max-width: 1024px) {
   .lecturers-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns for medium-sized screens */
+    grid-template-columns: repeat(1, 1fr); /* Two columns for medium-sized screens */
     gap: 25px;
   }
   .lecturer-image-wrapper{
@@ -191,7 +191,7 @@ h3 {
 @media screen and (max-width: 480px) {
   .lecturers-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Single column for small screens (e.g., smartphones) */
+    grid-template-columns: repeat(1, 1fr); /* Single column for small screens (e.g., smartphones) */
     gap: 25px;
   }
  .lecturer-image-wrapper{
