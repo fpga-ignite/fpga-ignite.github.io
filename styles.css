@@ -108,7 +108,7 @@ h3 {
 
 .lecturers-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -118,7 +118,7 @@ h3 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     display: flex;
     text-align: center;
     font-size: 15px;
@@ -144,16 +144,16 @@ h3 {
 }
 
 .lecturer:hover{
-    transform: translate(0, -8px);
+    transform: translate(0, -3px);
     color: white;
-    font-size: 17px;
+    font-size: 16px;
     background-image: linear-gradient(135deg, #8A0080, #002FFF);
     /*background: linear-gradient(135deg, #9a0dfe, #637dfb);*/
 
     /*background-image: linear-gradient(to right, #800080, #003366);*/
     /*background-image: linear-gradient(to right, #00FFFF, #0000FF);*/
     /*background-color: rgba(0, 0, 0, 0.7);*/
-    border: 2px solid white;
+    border: 5px solid gold;
 }
 .lecturer:hover a{
     color: gold;
@@ -166,7 +166,7 @@ h3 {
 .lecturer h6, .lecturer h3{
     text-align: justify;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
   .lecturers-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Two columns for medium-sized screens */
