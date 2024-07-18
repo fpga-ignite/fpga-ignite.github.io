@@ -121,7 +121,7 @@ h3 {
     transition: transform 0.1s ease-in-out;
     display: flex;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     border: 1px solid black;
 }
 
@@ -153,10 +153,10 @@ h3 {
     /*background-image: linear-gradient(to right, #800080, #003366);*/
     /*background-image: linear-gradient(to right, #00FFFF, #0000FF);*/
     /*background-color: rgba(0, 0, 0, 0.7);*/
-    border: 5px solid gold;
+    border: 4px solid white;
 }
 .lecturer:hover a{
-    color: gold;
+    color: black;
     font-size: 16px;
 }
 
@@ -291,6 +291,19 @@ h6 {
     display: inline-block;
     padding: 10px;
     background-color: beige;
+    /*background-color: #f2fff2;*/
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h7 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
     /*background-color: #f2fff2;*/
     border: 1px solid black;
     border-radius: 10px;
@@ -465,4 +478,114 @@ h6 {
         white-space: nowrap;
     }
 }
+/***********************************************************/
 
+.keynote-lecturer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+
+.keynote-lecturer {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.1s ease-in-out;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    border: 2px solid white;
+}
+
+.keynote-lecturer-image-wrapper{
+    float: right;
+    margin: 10px;
+    width: 200px;
+    max-height: 250px;
+}
+
+.keynote-lecturer-image{
+    float: right;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+}
+.keynote-lecturer-text{
+    overflow: auto;
+}
+
+.keynote-lecturer:hover{
+    transform: translate(0, 3px);
+    color: black;
+    font-size: 30px;
+    /*background-image: linear-gradient(135deg, #8A0080, #002FFF)*/;
+    /*background: linear-gradient(135deg, #9a0dfe, #637dfb);*/
+
+    /*background-image: linear-gradient(to right, #800080, #003366);*/
+    /*background: linear-gradient(to right, #001FFF, #0000FF);*/
+    background-color: rgba(255, 255, 255, 0.55);
+    border: 2px solid black;
+}
+.keynote-lecturer:hover a{
+    color: black;
+    font-size: 16px;
+}
+.keynote-lecturer:hover h7{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.keynote-lecturer p, .keynote-leturer h2{
+    text-align: justify;
+}
+.keynote-lecturer h6, .keynote-lecturer h3{
+    text-align: justify;
+}
+@media screen and (max-width: 1920px) {
+  .keynote-lecturers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two columns for medium-sized screens */
+    gap: 25px;
+  }
+  .keynote-lecturer-image-wrapper{
+    float: right;
+    margin: 25px;
+    max-height: 150px ;
+    width: 100px;
+ }
+
+ .keynote-lecturer-image{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 100px;
+    border: 1px solid black;
+ }
+}
+
+@media screen and (max-width: 480px) {
+  .keynote-lecturers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column for small screens (e.g., smartphones) */
+    gap: 25px;
+  }
+ .keynote-lecturer-image-wrapper{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 80px;
+ }
+
+ .keynote-lecturer-image{
+    float: right;
+    margin: 10px;
+    height: auto;
+    width: 80px;
+    border: 1px solid black;
+ }
+}
