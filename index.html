@@ -12,6 +12,7 @@
 
         <nav class="title-banner">
         <a href="#program-section" class="nav-link">Program</a>
+        <a href="#instructions-section" class="nav-link">Instructions</a>
         <a href="#presentations-section" class="nav-link">Presentations</a>
         <a href="#registration-section" class="nav-link">Registration</a>
         <a href="#past-events-section" class="nav-link">PastEvents</a>
@@ -67,6 +68,44 @@ Hotel Central and the IBIS are close to the main train station and in walking di
 	<p>Stefan Wallentowitz  <a href="https://wallento.cs.hm.edu/aboutme/" target="_blank">Stefan's home page</a>, <a href="https://hm.edu/" target="_blank">Hochschule München University of Applied Sciences</a> <br>
     </section>
 
+    <!-- Instructions -->
+    <section id="instructions-section" class="wave-animation">
+	    <h2>Instructions</h2> 
+	    <p> The virtual machine image contains all the required software for the summer school. Here, you can find the instructions on downloading and installing Virtual Machine software like VirtualBox and KVM/QEMU as well as the corresponding VM-images.</p>
+
+	    <h5>Quick notes on the installation of Virtual Machines (Virtual Box and KVM/QEMU)</h5>
+	    <ol>
+		    <li><h4> Virtual Machine Software (Host)</h4>
+
+            The virtual machine (VM) image is available in VDI-format for VirtualBox and QCOW2-Format for KVM/QEMU.
+            
+            If you have already VirtualBox or KVM/QEMU installed, continue to (2).
+            
+            Decide which virtual machine software to install. If unsure, use VirtualBox (easier installation).
+            
+            Download VirtualBox for your system here:
+	    <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Download links for VirtualBox</a> (Install and follow the instructions in the link provided).</li>
+
+            
+	    <h5>Link for the Virtual Machine Images:</h5>
+            The VM-image is available in two formats. You need only the one that fits to the virtual machine software that you installed.
+	    The Virtual Machine image is compressed in 7zip format and available as a Virtual Box Image (VDI) and KVM (QCOW), get it here:
+            
+		      Compressed VM-image:</h6> <a href="https://www.dropbox.com/scl/fo/r5vhut3xw3e7usm7uwigf/AAL-VNPnJ0mdrup8fKsUI1k?rlkey=ur4lj89heo88id6474v5yytw1&dl=0" target="_blank">VDI Image</a>
+
+		    <li><h4>Extract Virtual Machine</h4>
+	    The VM needs to be extracted before starting. If you haven't 7zip installed, install it using the appropriate binary provided in the package (linux, macos, windows, 32- and 64-bit). You can download 7-zip from here: <a href="https://www.7-zip.org/download.html" target="_blank">Download links for 7-zip</a>
+            
+	    Then extract the image using 7zip. </li>
+            
+            
+		    <li><h4> Start Virtual Machine</h4>
+            
+			    Using the virtual machine software you chose, create a new virtual machine wich has at least Two CPUs and 20GB of RAM (more is better), and open the corresponding image. Then, start the virtual machine and you should see the Debian-system booting to the graphical login screen.  Done!</li>
+            </ol>
+            
+
+    </section>
 
     <!-- Program -->
     <section id="program-section" class="wave-animation">
